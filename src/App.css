@@ -1,38 +1,326 @@
-.App {
-  text-align: center;
+body {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+	color: #8f8f8f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Headings */
+.big-heading {
+	font-size: 3.5rem;
+	line-height: 1.5;
+	font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.section-heading {
+	font-size: 3rem;
+	line-height: 1.5;
+	font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Containers */
+.container-fluid {
+	padding: 7% 15%;
+	/* 7% top and bottom 15% left and right*/
+}
+
+/* Sections  */
+.colored-section {
+	background-color: #ff4c68;
+	color: white;
+}
+
+.white-section {
+	background-color: white;
+	color: rgb(179, 0, 3);
+}
+
+.red-section {
+	background-color: rgb(179, 0, 3);
+	color: white;
+}
+
+.blue-section {
+	background-color: lightskyblue;
+	color: white;
+}
+
+/********************************************************************Service Carousel section start */
+
+.homeScreenServicesCarousel {
+	height: 350px;
+}
+
+#homeScreenServices {
+	width: 100%;
+}
+
+#homeScreenServices .carouselDiv {
+	height: 550px;
+	padding-top: 7%;
+	padding-bottom: 3%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.serviceCarouselIndicators {
+	left: 15%;
+}
+
+#homeScreenServices .carousel-items {
+	/* top.bottom -- left.right */
+	padding: 0% 0%;
+}
+
+#homeScreenServices .carousel-caption {
+	left: 55%;
+	/* the code below centers the caption vertically (middle of up and down)*/
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.blue-section .carousel-caption p {
+	color: white;
+}
+.red-section .carousel-caption p {
+	color: white;
+}
+.white-section .carousel-caption p {
+	color: rgb(179, 0, 3);
+}
+.white-section .carousel-caption h5 {
+	color: rgb(179, 0, 3);
+}
+
+.white-section .carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23b30003' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.white-section .carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23b30003' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.red-section .carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.red-section .carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.blue-section .carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.blue-section .carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.white-section .carousel-indicators {
+	background-color: #ff4c68;
+}
+
+.carousel-indicators {
+	box-shadow: inset 1px 1px 1px 1px rgba(192, 81, 155, 0.5);
+}
+
+#homeScreenServices img {
+	width: 28%;
+	margin-left: 15%;
+}
+
+/*****************************************************************************Service Carousel section end */
+
+/* ***************************************************************************Service Card Start */
+#VerticalServiceCard {
+	padding: 10px;
+}
+
+#HorizontalServiceCard .container-fluid {
+	padding: 3% 15%;
+}
+.price-text {
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.pricing-column {
+	padding: 3% 1%;
+	/*top/ bottom, then left, right*/
+}
+/* *******************************************************************************Service Card End */
+
+.green-section {
+	background-color: green;
+}
+
+/* Navagation bar  */
+.navbar {
+	padding: 1rem 0 1rem 0;
+	/*top1 right0  bottom 0 left 0*/
+}
+
+.header-subtitle {
+	color: rgb(179, 0, 3);
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.header-brand {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 4rem;
+	text-align: center;
+	/* font-weight: 700; */
+	color: rgb(179, 0, 3);
+}
+
+.nav-item {
+	padding: 0 7px;
+	/*left and right*/
+}
+
+.nav-link {
+	font-size: 1rem;
+	font-family: "Montserrat", sans-serif;
+	color: rgb(179, 0, 3);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgb(179, 0, 3);
+}
+
+/* products and booking buttons */
+.product-booking-btns {
+	margin: 5% 3% 5% 0;
+}
+
+/* Intro Carousel section */
+#introCarousel .container-fluid {
+	padding: 0%;
+}
+
+#introCarousel img {
+	width: 30%;
+	height: 500px;
+	object-fit: cover;
+	margin: auto;
+}
+
+/* Title section */
+#title .container-fluid {
+	padding: 2% 15%;
+	/* 2% top and bottom 15% left and right*/
+	text-align: left;
+}
+
+#title .big-heading {
+	padding-top: 10%;
+	color: rgb(179, 0, 3);
+}
+
+/* Title image */
+.title-image {
+	/*transform: rotate(25deg);   ....... rotate an image*/
+	max-width: 14%;
+	height: auto;
+	position: absolute;
+	left: 100px;
+	top: 27px;
+}
+
+/* features section */
+#features {
+}
+
+.feature-title {
+	font-weight: bold;
+}
+
+.feature-box {
+	padding: 5%;
+	/* 5% around each side. bringing the text tighter together*/
+}
+
+.icon {
+	color: #ef8172;
+	margin-bottom: 1rem;
+	/*puts space between the icon and the words below it*/
+}
+
+.icon:hover {
+	color: #ff4c68;
+	/*makes icons change color when hovered over*/
+}
+
+#testimonials {
+	background-color: #ef8172;
+}
+
+.testimonial-text {
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.testimonial-image {
+	width: 25%;
+	/*proportionately changes the size of the image*/
+	border-radius: 100%;
+	/*makes the image round*/
+	margin: 20px;
+}
+
+#press {
+	background-color: #ef8172;
+	padding-bottom: 3%;
+}
+
+.press-logo {
+	width: 15%;
+	margin: 20px 20px 50px;
+	/*20 top, 20 left and right, 50 bottom*/
+}
+
+/* Pricing Section */
+#pricing {
+	padding: 10px;
+}
+
+.price-text {
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.pricing-column {
+	padding: 3% 1%;
+	/*top/ bottom, then left, right*/
+}
+
+/* Call to action section */
+#cta {
+}
+
+.cta-booking-btns {
+	margin: 3% 3% 2% 3%;
+}
+
+/* Footer section */
+#footer .container-fluid {
+	padding: 3% 15%;
+	/* 3% top and bottom 15% left and right*/
+}
+
+.social-icon {
+	margin: 20px 10px;
+	/*Top/bottom and left/right*/
 }

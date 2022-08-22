@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import inflatablesData from "./data/services/inflatablesData";
+import toddlerFunData from "./data/services/toddlerFunData";
+import gamesData from "./data/services/gamesData";
+import tentsTablesChairsData from "./data/services/tentsTablesChairsData";
+import concessionData from "./data/services/concessionData";
+
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
+import OldTemplateSite from "./OldTemplateSite";
+
+const App = () => {
+	return (
+		<div>
+			<Header />
+			<Main
+				inflatablesData={inflatablesData}
+				toddlerFunData={toddlerFunData}
+				gamesData={gamesData}
+				tentsTablesChairsData={tentsTablesChairsData}
+				concessionData={concessionData}
+			/>
+			<OldTemplateSite data={inflatablesData} />
+			<Footer />
+		</div>
+	);
+};
 
 export default App;
