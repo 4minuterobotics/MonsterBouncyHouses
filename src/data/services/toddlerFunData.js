@@ -8,6 +8,7 @@ const toddlerFunData = [
 		duration: 6,
 		price: 100,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 	{
 		index: 1,
@@ -18,6 +19,7 @@ const toddlerFunData = [
 		duration: 6,
 		price: 100,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 	{
 		index: 2,
@@ -28,6 +30,7 @@ const toddlerFunData = [
 		duration: 6,
 		price: 100,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 	{
 		index: 3,
@@ -38,6 +41,7 @@ const toddlerFunData = [
 		duration: 6,
 		price: 200,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 	{
 		index: 4,
@@ -48,6 +52,7 @@ const toddlerFunData = [
 		duration: 6,
 		price: 300,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 	{
 		index: 5,
@@ -58,6 +63,7 @@ const toddlerFunData = [
 		duration: 6,
 		price: 200,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 	{
 		index: 6,
@@ -68,6 +74,7 @@ const toddlerFunData = [
 		duration: 6,
 		price: 300,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 	{
 		index: 7,
@@ -78,6 +85,7 @@ const toddlerFunData = [
 		duration: 6,
 		price: 250,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 	{
 		index: 8,
@@ -88,6 +96,7 @@ const toddlerFunData = [
 		duration: 6,
 		price: 350,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 ];
 

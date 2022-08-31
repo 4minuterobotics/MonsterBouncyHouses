@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import IntroCarousel from "./components/mainComponents/IntroCarousel";
 import HomeScreenServices from "./components/mainComponents/serviceCards/HomeScreenServices";
-import VerticalServicesCardCard from "./components/mainComponents/serviceCards/VerticalServicesCardCard";
-import HorizontalCarouselCardCard from "./components/mainComponents/serviceCards/HorizontalCarouselCardCard";
+import Cart from "./components/headerComponents/Cart";
+
+import VertServices from "./components/mainComponents/serviceCards/VertServices";
 
 const Main = (props) => {
 	return (
@@ -15,11 +16,8 @@ const Main = (props) => {
 				tentsTablesChairsData={props.tentsTablesChairsData}
 				concessionData={props.concessionData}
 			/>
-			<VerticalServicesCardCard
-				data={props.inflatablesData}
-				// the value of data should change based on which services page gets clicked
-			/>
-			<HorizontalCarouselCardCard data={props.inflatablesData} />
+
+			<VertServices data={props.inflatablesData} handleClick={props.handleClick} />
 		</React.Fragment>
 	);
 };

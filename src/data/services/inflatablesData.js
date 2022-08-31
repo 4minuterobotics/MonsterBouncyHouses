@@ -13,6 +13,7 @@ const inflatablesData = [
 		duration: 6,
 		price: 200,
 		imageUrl: BOUNCYHOUSE_IMAGE_URL,
+		amount: 1,
 	},
 	{
 		index: 1,
@@ -23,6 +24,7 @@ const inflatablesData = [
 		duration: 6,
 		price: 250,
 		imageUrl: COMBO_UNIT_IMAGE_URL,
+		amount: 1,
 	},
 	{
 		index: 2,
@@ -33,6 +35,7 @@ const inflatablesData = [
 		duration: 6,
 		price: 300,
 		imageUrl: SLIDE_IMAGE_URL,
+		amount: 1,
 	},
 	{
 		index: 3,
@@ -43,6 +46,7 @@ const inflatablesData = [
 		duration: 6,
 		price: 100,
 		imageUrl: BUBBLE_SUITS_IMAGE_URL,
+		amount: 1,
 	},
 ];
 

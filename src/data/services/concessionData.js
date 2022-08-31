@@ -8,6 +8,7 @@ const concessionData = [
 		duration: 6,
 		price: 40,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 	{
 		index: 1,
@@ -18,6 +19,7 @@ const concessionData = [
 		duration: 6,
 		price: 30,
 		imageUrl: "../images/inflatables/Modular_Celebrate.jpg",
+		amount: 1,
 	},
 ];
 

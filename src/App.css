@@ -140,11 +140,11 @@ p {
 /*****************************************************************************Service Carousel section end */
 
 /* ***************************************************************************Service Card Start */
-#VerticalServiceCard {
+#HorizontalServiceCard {
 	padding: 10px;
 }
 
-#HorizontalServiceCard .container-fluid {
+#VerticalServiceCard .container-fluid {
 	padding: 3% 15%;
 }
 .price-text {
@@ -234,7 +234,7 @@ p {
 	height: auto;
 	position: absolute;
 	left: 100px;
-	top: 27px;
+	top: 60px;
 }
 
 /* features section */
