@@ -3,8 +3,6 @@
 import React from "react";
 
 const VertServicesCard = (props) => {
-	//const { index, id, title, subtitle, alt, price, imageUrl } = props.service;
-
 	return (
 		<div className="container-fluid">
 			<div className="card mb-3">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 
 const Navbar = () => {
 	return (
@@ -21,34 +22,49 @@ const Navbar = () => {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav ml-auto">
 						<li className="nav-item ">
-							<a className="nav-link purple-font" href="#title">
-								Home
-							</a>
+							<Link to="/">
+								<a className="nav-link purple-font" href="#title">
+									Home
+								</a>
+							</Link>
 						</li>
+
 						<li className="nav-item">
 							<a className="nav-link " href="#bookOnline">
 								Book Online
 							</a>
 						</li>
+
 						<li className="nav-item">
-							<a className="nav-link" href="#inflatables">
-								Inflatables
-							</a>
+							<Link to="/inflatables">
+								<a className="nav-link" href="#inflatables">
+									Inflatables
+								</a>
+							</Link>
 						</li>
+
 						<li className="nav-item">
-							<a className="nav-link" href="#toddlerFun">
-								Toddler Fun
-							</a>
+							<Link to="/toddlerFun">
+								<a className="nav-link" href="#toddlerFun">
+									Toddler Fun
+								</a>
+							</Link>
 						</li>
+
 						<li className="nav-item">
-							<a className="nav-link" href="#games">
-								Games
-							</a>
+							<Link to="/games">
+								<a className="nav-link" href="#games">
+									Games
+								</a>
+							</Link>
 						</li>
+
 						<li className="nav-item">
-							<a className="nav-link" href="#tablesChairs&Tents">
-								Tables Chairs & Tents
-							</a>
+							<Link to="/tentsTablesChairs">
+								<a className="nav-link" href="#tablesChairs&Tents">
+									Tables Chairs & Tents
+								</a>
+							</Link>
 						</li>
 
 						<li className="nav-item dropdown">
@@ -69,9 +85,11 @@ const Navbar = () => {
 									</a>
 								</li>
 								<li>
-									<a className="dropdown-item" href="#concession">
-										Concession
-									</a>
+									<Link to="/concession">
+										<a className="dropdown-item" href="#concession">
+											Concession
+										</a>
+									</Link>
 								</li>
 								<li>
 									<a className="dropdown-item" href="#decorations">
@@ -90,29 +108,11 @@ const Navbar = () => {
 								</li>
 							</ul>
 						</li>
-
-						{/*  
-      <li className="nav-item">
-        <a className="nav-link" href="#features"> Features</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#testimonials"> Testimonials</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#pricing"> Pricing</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#cta"> Book Us</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#footer"> Contact</a>
-      </li>
-      */}
 					</ul>
 				</div>
 			</nav>
 
-			<div>
+			{/* <div>
 				<h1>using local navbar class</h1>
 				<div className="container-sm green-section">100% wide until small breakpoint</div>
 				<div className="container-md green-section">100% wide until medium breakpoint</div>
@@ -122,7 +122,7 @@ const Navbar = () => {
 					100% wide until extra extra large breakpoint
 				</div>
 				<br />
-			</div>
+			</div> */}
 		</React.Fragment>
 	);
 };

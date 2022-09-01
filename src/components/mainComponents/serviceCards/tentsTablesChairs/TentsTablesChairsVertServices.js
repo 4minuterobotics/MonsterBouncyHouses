@@ -1,14 +1,13 @@
-//This page can be duplicated to make a horizontal card page using the commented out code
-
 import React, { useState } from "react";
-import VertServicesCard from "./VertServicesCard";
+import VertServicesCard from "../VertServicesCard";
+import tentsTablesChairsData from "../../../../data/services/tentsTablesChairsData";
 
-const VertServices = (props) => {
+const TentsTablesChairsVertServices = (props) => {
 	return (
 		<section>
 			<div className="row VerticalServiceCard">
 				{/* className="row  HorizontalServiceCard"*/}
-				{props.data.map((service) => (
+				{tentsTablesChairsData.map((service) => (
 					<VertServicesCard key={service.id} service={service} handleClick={props.handleClick} />
 				))}
 			</div>
@@ -16,4 +15,4 @@ const VertServices = (props) => {
 	);
 };
 
-export default VertServices;
+export default TentsTablesChairsVertServices;
